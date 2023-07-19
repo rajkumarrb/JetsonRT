@@ -23,7 +23,7 @@ def preprocess(frame):
     return processed_frame
 
 
-model = load_model("model_0719_1901_epochs_50_videos_100.keras")
+model = load_model("model.keras")
 
 video_files = sum((glob.glob(path + "/*.avi") for path in test_path), [])
 video_files = np.random.choice(video_files, size=test_size, replace=False)

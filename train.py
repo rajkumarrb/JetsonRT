@@ -70,7 +70,7 @@ def main():
 
     model.fit(train_dataset, epochs=epochs, validation_data=val_dataset)
 
-    model.save("model_{}_epochs_{}_videos_{}.keras".format(current_datetime, epochs, videos))
+    model.save("models/model_{}_epochs_{}_videos_{}.keras".format(current_datetime, epochs, videos))
 
     print("")
     print("Finished.")
